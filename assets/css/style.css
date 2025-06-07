@@ -1,0 +1,503 @@
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 2em;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(194, 194, 194);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "menu"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.menu {
+    grid-area: menu;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgb(29, 29, 29);
+}
+
+.logo {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 2.5em;
+}
+
+.logo i {
+    font-size: 0.8em;
+    animation: color 5s ease infinite;
+}
+
+@keyframes color {
+    0% {
+        color: rgb(222, 174, 0);
+    }
+    10% {
+        color: rgb(194, 194, 194);
+    }
+    40% {
+        color: rgb(29, 29, 29);
+    }
+    100% {
+        color: rgb(222, 174, 0);
+    }
+}
+
+.s1 {
+    animation: color1 10s ease infinite;
+}
+
+@keyframes color1 {
+    0% {
+        color: rgb(222, 174, 0);
+    }
+    10% {
+        color: rgb(194, 194, 194);
+    }
+    40% {
+        color: rgb(29, 29, 29);
+    }
+    100% {
+        color: rgb(222, 174, 0);
+    }
+}
+
+.s2 {
+    animation: color2 10s ease infinite;
+}
+
+@keyframes color2 {
+    0% {
+        color: rgb(222, 174, 0);
+    }
+    20% {
+        color: rgb(194, 194, 194);
+    }
+    50% {
+        color: rgb(29, 29, 29);
+    }
+    100% {
+        color: rgb(222, 174, 0);
+    }
+}
+
+.s3 {
+    animation: color3 10s ease infinite;
+}
+
+@keyframes color3 {
+    0% {
+        color: rgb(222, 174, 0);
+    }
+    30% {
+        color: rgb(194, 194, 194);
+    }
+    60% {
+        color: rgb(29, 29, 29);
+    }
+    100% {
+        color: rgb(222, 174, 0);
+    }
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.short-menu {
+    color: rgb(222, 174, 0);
+}
+
+.menu-item-i {
+    font-size: 2em;
+    color: rgb(222, 174, 0);
+}
+
+.short-menu:hover,
+.menu-item-i:hover {
+    color: rgb(194, 194, 194);
+}
+
+.subcontainer {
+    height: 100%;
+    overflow: auto;
+}
+
+.main {
+    grid-area: main;
+}
+
+.hero {
+    background-image: url("../img/restaurant2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}
+
+.hero div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.hero h2 {
+    margin: 0;
+    margin-right: 1rem;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: rgb(222, 174, 0);
+}
+
+.gallery {
+    margin-bottom: 1rem;
+    display: grid;
+    justify-items: center;
+}
+
+.category {
+    width: 100vw;
+}
+
+.category h3 {
+    margin: 0;
+    padding-left: 0.5em;
+    font-size: 3em;
+    background-color: rgb(29, 29, 29);
+    color: rgb(222, 174, 0);
+}
+
+.card {
+    border: 0px solid rgb(222, 174, 0);
+    background-color: rgb(222, 174, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 20rem; */
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgb(29, 29, 29);
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+    height: 13rem;
+    overflow: hidden;
+}
+
+.card p {
+    margin: 0.5rem;
+    font-size: 1em;
+}
+
+img {
+    width: 20rem;
+    height: 15rem;
+    filter: grayscale();
+    transition: all 0.5s linear;
+}
+
+img:hover {
+    filter: grayscale(0%);
+    rotate: 0deg;
+    scale: 1.3;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: rgb(29, 29, 29);
+    color: rgb(194, 194, 194);
+}
+
+.footer-content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-grid,
+.footer-follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1em;
+}
+
+.footer a {
+    color: rgb(222, 174, 0);
+}
+
+.footer i:hover,
+.footer a:hover {
+    color: rgb(194, 194, 194);
+}
+
+.footer p {
+    font-size: 0.6em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+@media (width<768px) {
+    .menu-item,
+    .menu-items-container p,
+    .footer-contact p,
+    .footer-follow p {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 3em;
+    }
+
+    .logo i {
+        font-size: 0.8em;
+    }
+
+    .menu-items {
+        gap: 10px;
+    }
+
+    .menu-items a {
+        color: rgb(222, 174, 0);
+    }
+
+    .menu-items a:hover {
+        color: rgb(194, 194, 194);
+    }
+
+    .menu-item-i,
+    .short-menu {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 3.5em;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        /* width: 100%; */
+    }
+
+    .card {
+        /* max-width: 15rem; */
+        margin: 0.5rem;
+    }
+
+    .card-img {
+        max-width: 15rem;
+    }
+
+    .footer-content {
+        flex-direction: row-reverse;
+        gap: 5rem;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    .footer > p {
+        font-size: 0.5em;
+    }
+
+    .footer-contact p:first-child,
+    .footer-follow p:first-child {
+        font-size: 1em;
+    }
+
+    .footer-follow a {
+        display: flex;
+        align-items: center;
+        color: rgb(222, 174, 0);
+        gap: 0.3rem;
+    }
+
+    .footer-contact {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 921px) {
+    .contact > i {
+        display: none;
+    }
+
+    .contact-grid p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 921px) {
+    .rights-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 922px) {
+    .container {
+        grid-template-areas:
+            "menu main"
+            "menu main"
+            "menu footer";
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    }
+
+    .logo {
+        padding-top: 0.3em;
+        font-size: 3em;
+    }
+
+    .logo i {
+        font-size: 0.8em;
+    }
+
+    .hero h2 {
+        font-size: 4em;
+        margin-right: 3rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .menu-items-container {
+        padding-top: 2em;
+        border-top: 1px solid rgb(194, 194, 194);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .rights-menu {
+        height: 3em;
+        color: rgb(194, 194, 194);
+        align-self: flex-start;
+        align-content: center;
+        font-size: 0.7em;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        font-size: 1.2em;
+        gap: 2rem;
+    }
+
+    .subcontainer {
+        height: 100vh;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    .footer-content {
+        gap: 5rem;
+    }
+
+    .footer-contact p:first-child,
+    .footer-follow p:first-child {
+        font-size: 1.2em;
+    }
+
+    .rights-footer {
+        display: none;
+    }
+
+    .footer-follow i {
+        font-size: 1.5em;
+    }
+
+    .footer-contact {
+        align-items: center;
+    }
+
+    .contact-grid {
+        display: grid;
+        gap: 0.5rem;
+    }
+
+    .contact {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+        column-gap: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        font-size: 5em;
+    }
+
+    .hero h2 {
+        font-size: 5em;
+        margin-right: 3rem;
+    }
+
+    .rights-menu {
+        font-size: 0.8em;
+    }
+
+    .category h3 {
+        padding-left: 5rem;
+    }
+}
